@@ -10,13 +10,14 @@
   </head>
 
   <body>
-    <nav class="navbar">
+  <!--Navbar-->
+    <nav class="navbar_container">
       <img
         class="navbar__logo"
         src="./images/slack-logo.png"
         alt="slack_logo"
       />
-      <ul class="disabled-mobile">
+      <ul class="navbar__menu">
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
@@ -24,106 +25,147 @@
       </ul>
       <i class="fa fa-bars fa-2x navbar_menu" aria-hidden="true"></i>
     </nav>
+
+  <!--Header-->
     <header>
-      <div class="header_style">
+      <div class="header_container">
         <div>
-          <h1 class="header_h1">
-            Where Work <br />
-            Happens
+          <h1 class="header_title">
+            Where Work Happens
           </h1>
         </div>
-        <div class="header_happens">
-          <p class="header_p">
-            When your team needs to kick off a <br />
-            project, hire a new employee, deploy some <br />
-            code, review a sales contract, finalize next <br />
-            year's budget, measure an A/B test, plan <br />your next office
-            opening, and more,
-            <br />
-            Slack has you covered.
-          </p>
-          <div>
+        <p class="header_text">
+          When your team needs to kick off a 
+          project, hire a new employee, deploy some 
+          code, review a sales contract, finalize next 
+          year's budget, measure an A/B test, plan your next office
+          opening, and more,
+         
+          Slack has you covered.
+        </p>
+        <div class="header_main">
+          <span class="header_span">
             <label for="email"></label>
             <input
               class="form_email"
               type="email"
-              id="email"
+              id="email_"
               placeholder="Email adress"
             />
             <button class="header_button" type="button" name="button">
               GET STARTED
             </button>
-          </div>
-          <p class="header_p_button">
+          </span>
+          <p class="header_text_button">
             Already using Slack? <a href="#">Sign in.</a>
           </p>
           <img
-            class="navbar_home"
+            class="header_img"
             src="./images/home_talking.png"
             alt="home_work_happening"
           />
         </div>
       </div>
     </header>
+
+    <!--Main-->
     <main>
-      <div class="main_style">
+      <div class="main_container">
         <div>
-          <h2 class="main_h2">You're in good company</h2>
+          <h2 class="main_title">You're in good company</h2>
         </div>
-        <div class="main_p">
+        <div class="main_text">
           <p>
-            Millions of people around the world have <br />
-            already made Slack the place where their <br />
+            Millions of people around the world have
+            already made Slack the place where their 
             work happens.
           </p>
         </div>
         <button class="main_button">DISCOVER WHY</button>
-        <div>
-          <img class="main-button_img" src="./images/airbnb-logo.png" alt="" />
 
-          <img
-            class="main-button_img"
-            src="./images/capital-one-logo.png"
-            alt=""
-          />
+        <div class="main_company_container"> 
 
-          <img class="main-button_img" src="./images/harvard-logo.png" alt="" />
-          <img
-            class="main-button_img main-button_losangeles"
-            src="./images/los-angeles-times-logo.png"
-            alt=""
-          />
+          <div class="main_img_container">
+            <figure class="main_img_wrap">
+              <img class="main_img" src="./images/airbnb-logo.png" alt="" />
+            </figure>
+          </div>
 
-          <img class="main-button_img" src="./images/oracle-logo.png" alt="" />
+          <div class="main_img_container">
+            <figure class="main_img_wrap">
+              <img
+                class="main_img"
+                src="./images/capital-one-logo.png"
+                alt=""
+              />
+            </figure>
+          </div>
 
-          <img
-            class="main-button_img"
-            src="./images/ticketmaster-logo.png"
-            alt=""
-          />
+          <div class="main_img_container">
+            <figure class="main_img_wrap">
+              <img class="main_img" src="./images/harvard-logo.png" alt="" />
+            </figure>
+          </div>
+
+          <div class="main_img_container">
+            <figure class="main_img_wrap">
+              <img
+                class="main_img "
+                src="./images/los-angeles-times-logo.png"
+                alt=""
+              />
+            </figure>
+          </div>
+
+          <div class="main_img_container">
+            <figure class="main_img_wrap">
+              <img class="main_img" src="./images/oracle-logo.png" alt="" />
+            </figure>
+          </div>
+
+          <div class="main_img_container">
+            <figure class="main_img_wrap">
+              <img
+                class="main_img"
+                src="./images/ticketmaster-logo.png"
+                alt=""
+              />
+            </figure>
+          </div>
+          
         </div>
       </div>
-      <div class="main_button_flex">
-        <h3 class="main_h3">Try it for free</h3>
-        <p class="main_p_button">Already using Slack? <a href="">Sign in</a></p>
-        <label for="email"></label>
-        <input
-          class="form_email"
-          type="email"
-          id="email"
-          placeholder="Email adress"
-        />
-        <button class="header_button" type="button" name="button">
-          GET STARTED
-        </button>
+      <!---->
+      <div class="main_try">
+        <span class="main_span">
+          <h3 class="main_title">Try it for free</h3>
+          <p class="main_text">Already using Slack? <a href="">Sign in</a></p>
+        </span>
+        <span class="main_span_input">
+          <label for="email"></label>
+          <input
+            class="form_email"
+            type="email"
+            id="email"
+            placeholder="Email adress"
+          />
+          <button class="header_button" type="button" name="button">
+            GET STARTED
+          </button>
+        </span>
       </div>
     </main>
+
+    <!--Footer-->
     <footer>
-      <div>
-        <img class="footer_img_slack" src="./images/iso-slack.png" alt="" />
+      <div class="footer_container">
+        <figure class="footer_img_slack">
+          <img width="100%" src="./images/iso-slack.png" alt="" />
+        </figure>
+
         <div class="footer_list">
           <ul>
-            <b><li>COMPANY</li></b>
+            <li><b>COMPANY</b></li>
             <li>About Us</li>
             <li>Careers</li>
             <li>Blog</li>
@@ -158,7 +200,7 @@
       </div>
 
       <div class="footer_footer">
-        <div>
+        <div class="footer_status_container">
           <ul class="footer_status">
             <li>Status</li>
             <li>Privacy & Terms</li>
